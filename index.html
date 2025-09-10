@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayakkabı Tamiri</title>
+
+  <!-- Favicon (logonuzu dosya adıyla aynı klasöre koyun) -->
+  <link rel="icon" href="FB02B53A-FD08-4183-AC68-FA23C92D153F.jpeg" type="image/jpeg"/>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <style type="text/tailwindcss">
+    :root{
+      --primary:#ec9513;
+      --bg:#fcfaf8;
+      --text:#1b160d;
+      --muted:#9a7b4c;
+      --card:#ffffff;
+      --border:#f3eee7;
+    }
+    body{ background:var(--bg); color:var(--text); }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex flex-col">
+
+    <!-- HEADER -->
+    <header class="border-b border-[var(--border)]">
+      <div class="mx-auto max-w-7xl px-4 sm:px-8 py-4 flex items-center justify-between gap-4">
+        <a href="#" class="flex items-center gap-3">
+          <!-- LOGO: yüklediğiniz görsel -->
+          <img src="FB02B53A-FD08-4183-AC68-FA23C92D153F.jpeg" alt="Ayakkabı Tamiri Logo" class="h-10 w-auto rounded-sm" />
+          <span class="text-2xl font-black tracking-tight">Ayakkabı Tamiri</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#hizmetler" class="font-medium hover:text-[var(--primary)] transition-colors">Hizmetler</a>
+          <a href="#fiyatlar" class="font-medium hover:text-[var(--primary)] transition-colors">Fiyatlar</a>
+          <a href="#iletisim" class="font-medium hover:text-[var(--primary)] transition-colors">İletişim</a>
+        </nav>
+
+        <a href="#iletisim" class="inline-flex items-center justify-center h-10 px-5 rounded-md bg-[var(--primary)] text-[var(--text)] font-bold shadow hover:bg-opacity-90">
+          Hemen Tamir Ettir
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="px-4 sm:px-8">
+      <div class="mx-auto max-w-7xl">
+        <div class="min-h-[520px] my-10 rounded-2xl flex flex-col items-center justify-center text-center p-8 bg-cover bg-center"
+             style='background-image:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),url("https://lh3.googleusercontent.com/aida-public/AB6AXuCj8tbcwmhV7BiceSYJIYOovvhx8-CnmOU3DcT2IPPBZNLOFcPNbMpegkD_OhoIb5N4ti_rz5xkzXWox1eKndHqInkXD6aFrpCO9j2dsqYlmHVvtWBAKX5H8z4qPC9lBRMSTyvc6mgaTDly4rJkqmNsVi4w0rld_dTBxJsCfUYamtqrEI_x_5d1bzp7rw0-T50fxUqMk1FCaizUAeW6AQXWjy75VfkKvSqNaZXXiqzyi56LxTlqdp3e0hBMxMB3s0uIOa05PzNk8B4");'>
+          <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight max-w-3xl">
+            Eski Ayakkabılarınızı Yeniden Hayata Döndürüyoruz
+          </h1>
+          <p class="text-white/90 text-lg sm:text-xl mt-4">Atmayın, biz tamir ederiz!</p>
+          <a href="#iletisim" class="mt-8 inline-flex items-center justify-center h-12 px-7 rounded-md bg-[var(--primary)] text-[var(--text)] font-bold shadow hover:bg-opacity-90">
+            Hemen Tamir Ettir
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section id="hizmetler" class="py-16 bg-white/40">
+      <div class="mx-auto max-w-7xl px-4 sm:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black text-center mb-12">Hizmetlerimiz</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-8 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+            <h3 class="text-xl font-bold mb-2">Ayakkabı Tamiri</h3>
+            <p class="text-[var(--muted)] text-sm">Yıpranmış tabanlar, açılan dikişler, topuk ve astar onarımları.</p>
+          </div>
+          <div class="p-8 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+            <h3 class="text-xl font-bold mb-2">Derinlemesine Temizlik</h3>
+            <p class="text-[var(--muted)] text-sm">Deri, süet, nubuk ve kumaş için profesyonel bakım.</p>
+          </div>
+          <div class="p-8 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-sm">
+            <h3 class="text-xl font-bold mb-2">Kış Hazırlığı</h3>
+            <p class="text-[var(--muted)] text-sm">Su itici kaplama, besleyici bakım ve koruma uygulamaları.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FİYATLAR -->
+    <section id="fiyatlar" class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-8">
+        <h2 class="text-3xl sm:text-4xl font-black text-center mb-12">Fiyatlar</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-8 rounded-xl border border-[var(--border)] bg-[var(--card)] shadow-sm flex flex-col">
+            <h3 class="text-2xl font-bold">Temel Tamir</h3>
+            <p class="mt-2"><span class="text-5xl font-extrabold">50</span> <span class="font-bold">TL</span></p>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>Taban değişimi</li>
+              <li>Dikiş tamiri</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-flex items-center justify-center h-12 px-6 rounded-md bg-[var(--border)] hover:bg-[var(--primary)]/50 font-bold">Seç</a>
+          </div>
+
+          <div class="p-8 rounded-xl border-2 border-[var(--primary)] bg-[var(--card)] shadow flex flex-col relative">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[var(--primary)] text-white text-xs font-bold rounded-full px-3 py-1">Popüler</span>
+            <h3 class="text-2xl font-bold">Detaylı Tamir</h3>
+            <p class="mt-2"><span class="text-5xl font-extrabold">100</span> <span class="font-bold">TL</span></p>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>Taban değişimi</li>
+              <li>Dikiş tamiri</li>
+              <li>Boya & parlatma</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-flex items-center justify-center h-12 px-6 rounded-md bg-[var(--primary)] text-[var(--text)] font-bold hover:bg-opacity-90">Seç</a>
+          </div>
+
+          <div class="p-8 rounded-xl border border-[var(--border)] bg-[var(--card)] shadow-sm flex flex-col">
+            <h3 class="text-2xl font-bold">Özel Tasarım</h3>
+            <p class="mt-2"><span class="text-5xl font-extrabold">200</span> <span class="font-bold">TL</span></p>
+            <ul class="mt-4 space-y-2 text-sm">
+              <li>Taban değişimi</li>
+              <li>Dikiş tamiri</li>
+              <li>Boya & parlatma</li>
+              <li>Özel aksesuar ekleme</li>
+            </ul>
+            <a href="#iletisim" class="mt-6 inline-flex items-center justify-center h-12 px-6 rounded-md bg-[var(--border)] hover:bg-[var(--primary)]/50 font-bold">Seç</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="py-16 bg-white/40">
+      <div class="mx-auto max-w-7xl px-4 sm:px-8">
+        <div class="max-w-2xl mx-auto text-center mb-10">
+          <h2 class="text-3xl sm:text-4xl font-black mb-2">Bize Ulaşın</h2>
+          <p class="text-[var(--muted)]">Sorularınız veya özel talepleriniz için formu doldurun. Fotoğraf & video ekleyebilirsiniz.</p>
+        </div>
+
+        <!-- FormSubmit AJAX entegrasyonu -->
+        <form id="contactForm" class="max-w-2xl mx-auto space-y-6" enctype="multipart/form-data" method="POST">
+          <!-- FormSubmit ayarları -->
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_subject" value="Yeni form gönderimi - Ayakkabı Tamiri" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-sm font-medium pb-2">Ad Soyad</label>
+              <input id="name" name="name" required class="w-full rounded-md border border-[var(--border)] bg-white h-12 px-4 focus:ring-2 focus:ring-[var(--primary)]" placeholder="Ad Soyad" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium pb-2">E-posta</label>
+              <input id="email" name="email" type="email" required class="w-full rounded-md border border-[var(--border)] bg-white h-12 px-4 focus:ring-2 focus:ring-[var(--primary)]" placeholder="ornek@mail.com" />
+            </div>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium pb-2">Mesajınız</label>
+            <textarea id="message" name="message" rows="5" required class="w-full rounded-md border border-[var(--border)] bg-white p-4 focus:ring-2 focus:ring-[var(--primary)]" placeholder="Ayakkabınızın problemi..."></textarea>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium pb-2" for="photos">Fotoğraf(lar)</label>
+              <input id="photos" name="photos" type="file" accept="image/*" multiple class="block w-full text-sm file:mr-4 file:py-2.5 file:px-4 file:rounded-md file:border-0 file:bg-[var(--primary)] file:text-[var(--text)] hover:file:bg-opacity-90" />
+              <p class="text-xs text-[var(--muted)] mt-1">En fazla birkaç adet, toplam boyut çok büyük olmasın.</p>
+            </div>
+            <div>
+              <label class="block text-sm font-medium pb-2" for="videos">Video(lar)</label>
+              <input id="videos" name="videos" type="file" accept="video/*" multiple class="block w-full text-sm file:mr-4 file:py-2.5 file:px-4 file:rounded-md file:border-0 file:bg-[var(--primary)] file:text-[var(--text)] hover:file:bg-opacity-90" />
+              <p class="text-xs text-[var(--muted)] mt-1">Kısa videolar tercih edin.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-end gap-3">
+            <button id="submitBtn" type="submit" class="inline-flex items-center justify-center h-12 px-8 rounded-md bg-[var(--primary)] text-[var(--text)] font-bold shadow hover:bg-opacity-90">
+              Gönder
+            </button>
+          </div>
+        </form>
+
+        <!-- Başarı Pop-up -->
+        <div id="successModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center p-4 z-50">
+          <div class="max-w-md w-full rounded-xl bg-white p-6 text-center">
+            <img src="FB02B53A-FD08-4183-AC68-FA23C92D153F.jpeg" alt="" class="h-12 w-auto mx-auto mb-3" />
+            <h3 class="text-xl font-bold mb-2">Teşekkürler!</h3>
+            <p class="text-[var(--muted)]">Mesajınız bize ulaştı. En kısa sürede sizinle iletişime geçeceğiz.</p>
+            <button id="closeModal" class="mt-6 inline-flex items-center justify-center h-11 px-6 rounded-md bg-[var(--primary)] text-[var(--text)] font-bold hover:bg-opacity-90">Kapat</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-auto border-t border-[var(--border)] bg-[var(--bg)]">
+      <div class="mx-auto max-w-7xl px-4 sm:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="FB02B53A-FD08-4183-AC68-FA23C92D153F.jpeg" alt="Logo" class="h-8 w-auto rounded-sm" />
+          <span class="font-bold text-lg">Ayakkabı Tamiri</span>
+        </div>
+
+        <p class="text-sm text-[var(--muted)] text-center md:text-left">© 2024 Ayakkabı Tamiri. Tüm hakları saklıdır.</p>
+
+        <div class="flex items-center gap-4">
+          <a href="https://instagram.com/ayakkabitamirdunyasi28" target="_blank" rel="noopener" class="text-[var(--muted)] hover:text-[var(--primary)] font-medium">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- FORM JS (FormSubmit AJAX) -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const btn  = document.getElementById('submitBtn');
+    const modal = document.getElementById('successModal');
+    const closeModal = document.getElementById('closeModal');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Gönderiliyor...';
+
+      const fd = new FormData(form);
+      try {
+        const res = await fetch('https://formsubmit.co/ajax/cristophiaivar@gmail.com', {
+          method: 'POST',
+          body: fd
+        });
+        if (!res.ok) throw new Error('Gönderim hatası');
+        form.reset();
+        modal.classList.remove('hidden');
+      } catch (err) {
+        alert('Gönderim sırasında bir sorun oluştu. Lütfen tekrar deneyin.');
+        console.error(err);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Gönder';
+      }
+    });
+
+    closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+  </script>
+</body>
+</html>
